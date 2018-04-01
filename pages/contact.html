@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <script src="../lib/knockout-3.4.2.js"></script>
+    <script src="../scripts/app.js"></script>
+    <link rel="stylesheet" href="../style/main.css">
+    <script>
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }else{
+            $('nav').removeClass('black');
+        }
+    })
+    </script>
+</head>
+<body>
+    <section class="intro">
+        <div class="inner">
+            <nav>
+                <div class="logo">LOGO</div>
+                <ul>
+                    <li><a href="/index.html" >Home</a></li>
+                    <li><a href="about.html" >Blog</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                    <h1>Contact</h1>
+                    <a href="/index.html" class="btn">Back</a>
+            </div>
+        </div>
+    </section>
+    <p>
+            Nam bibendum nibh at luctus placerat. Vestibulum eget magna vitae felis venenatis posuere. Nunc blandit diam nec interdum blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sagittis felis eget tellus iaculis auctor. Etiam ante eros, molestie a nunc sit amet, tincidunt pretium dolor. Quisque at diam neque. Morbi blandit mauris sed tincidunt luctus. In erat mi, vulputate in turpis at, tristique molestie magna. Etiam suscipit, erat nec fermentum condimentum, mi augue molestie ipsum, sed rhoncus urna diam non nibh. Praesent tristique risus mi, ut consequat sem faucibus et. Mauris ut dolor tincidunt, aliquam nisl a, venenatis leo. Fusce varius orci est, non congue erat fermentum nec. Vivamus eu enim scelerisque, semper tortor sed, egestas neque. Vestibulum faucibus ac massa ac egestas. Fusce rhoncus nibh eu lorem rutrum mollis.
+    </p>
+</body>
+</html>

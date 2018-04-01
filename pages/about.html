@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    <title>Home</title>
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <script src="../lib/knockout-3.4.2.js"></script>
+    <script src="../scripts/app.js"></script>
+    <link rel="stylesheet" href="../style/main.css">
+    <script>
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }else{
+            $('nav').removeClass('black');
+        }
+    })
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome To GitHub!</h1>
-    </div>
+    <section class="intro">
+        <div class="inner">
+            <nav>
+                <div class="logo">LOGO</div>
+                <ul>
+                    <li><a href="/index.html" >Home</a></li>
+                    <li><a href="#" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                    <h1>Irfan's Blog</h1>
+                    <a href="contact.html" class="btn">Contact</a>
+            </div>
+        </div>
+    </section>
+    <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id blandit nulla, in tempor felis. Curabitur rhoncus facilisis ultrices. Quisque luctus tellus id lacus ultrices, id scelerisque magna tristique. Nullam in tincidunt libero, at pellentesque nibh. Quisque purus lorem, molestie a nunc sit amet, mattis euismod urna. Donec eget velit dignissim, commodo velit id, pulvinar metus. Mauris augue dolor, posuere eu feugiat ut, hendrerit pellentesque felis.
+    </p>
 </body>
 </html>

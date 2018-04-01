@@ -9,13 +9,30 @@
     <script src="./lib/knockout-3.4.2.js"></script>
     <script src="./scripts/app.js"></script>
     <link rel="stylesheet" href="./style/main.css">
+    <script>
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }else{
+            $('nav').removeClass('black');
+        }
+    })
+    </script>
 </head>
 <body>
     <section class="intro">
         <div class="inner">
+            <nav>
+                <div class="logo">LOGO</div>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="./pages/about.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
             <div class="content">
                     <h1>Welcome To Irfan's GitHub</h1>
-                    <a href="#" class="btn">Aout Me</a>
+                    <a href="./pages/about.html" class="btn">About Me</a>
             </div>
         </div>
     </section>
