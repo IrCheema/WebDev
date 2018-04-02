@@ -9,15 +9,6 @@
     <script src="./lib/knockout-3.4.2.js"></script>
     <script src="./scripts/app.js"></script>
     <link rel="stylesheet" href="./style/main.css">
-    <script>
-    $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-            $('nav').addClass('black');
-        }else{
-            $('nav').removeClass('black');
-        }
-    })
-    </script>
 </head>
 <body>
     <section class="intro">
@@ -45,5 +36,14 @@
     <p>
             Vestibulum ullamcorper elit auctor pharetra commodo. Nulla lacus nunc, fringilla sed risus in, tempus dignissim nisl. Donec tellus ligula, laoreet a placerat eget, consectetur vitae mi. Nam at gravida nibh, non lacinia sem. Donec fringilla fringilla quam sed aliquam. Morbi sed dolor varius, condimentum est quis, laoreet nibh. Sed laoreet pellentesque est, non elementum justo maximus sit amet. Phasellus commodo mollis mauris, eu tincidunt orci rhoncus sed. Pellentesque in tortor non elit mollis rhoncus eget sit amet odio. Donec et lectus eu sem congue cursus sit amet at tellus. Phasellus lobortis sem turpis, at cursus neque ultrices ut.
     </p>
+    <script>
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }else{
+                $('nav').removeClass('black');
+            }
+        })
+        </script>
 </body>
 </html>
